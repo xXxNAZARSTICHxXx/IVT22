@@ -1,0 +1,66 @@
+﻿  T8.cpp
+X:\Programming II\CAOD\T8\T8\T8.cpp(183,34): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+X:\Programming II\CAOD\T8\T8\T8.cpp(187,53): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+X:\Programming II\CAOD\T8\T8\T8.cpp(345,34): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+X:\Programming II\CAOD\T8\T8\T8.cpp(349,53): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+X:\Programming II\CAOD\T8\T8\T8Module.cpp(21,72): warning C4244: +=: преобразование "double" в "size_t", возможна потеря данных
+  (компиляция исходного файла "T8.cpp")
+  X:\Programming II\CAOD\T8\T8\T8Module.cpp(21,72):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T8\T8\T8Module.cpp(387,23):
+  	выполняется компиляция ссылки на экземпляр класс шаблон функции "DynamicArray<int>"
+  	X:\Programming II\CAOD\T8\T8\T8Module.cpp(19,10):
+  	во время компиляции функции-члена класс шаблон "void DynamicArray<int>::increaseCapacity(void)"
+  		X:\Programming II\CAOD\T8\T8\T8Module.cpp(191,29):
+  		см. первую ссылку на "DynamicArray<int>::increaseCapacity" в "DynamicArray<int>::insert"
+  		X:\Programming II\CAOD\T8\T8\T8.cpp(109,23):
+  		см. первую ссылку на "DynamicArray<int>::insert" в "main"
+  
+X:\Programming II\CAOD\T8\T8\T5Module.cpp(213,14): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+  (компиляция исходного файла "T8.cpp")
+  X:\Programming II\CAOD\T8\T8\T5Module.cpp(213,14):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T8\T8\T8.cpp(141,21):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "__int64 interpolation_search<T>(A [],size_t,A)"
+          with
+          [
+              T=int,
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T8\T8\T5Module.cpp(63,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T8.cpp")
+  X:\Programming II\CAOD\T8\T8\T5Module.cpp(63,10):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T8\T8\T8.cpp(174,17):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void cocktail_sort<T>(size_t,A [])"
+          with
+          [
+              T=int,
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T8\T8\T5Module.cpp(45,9): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T8.cpp")
+  X:\Programming II\CAOD\T8\T8\T5Module.cpp(45,9):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T8\T8\T8.cpp(177,17):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void insertion_sort<DynamicArray<int>>(size_t,A &)"
+          with
+          [
+              A=DynamicArray<int>
+          ]
+  
+X:\Programming II\CAOD\T8\T8\T5Module.cpp(337,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T8.cpp")
+  X:\Programming II\CAOD\T8\T8\T5Module.cpp(337,15):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T8\T8\T8.cpp(190,17):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void shellSort<T>(A [],size_t)"
+          with
+          [
+              T=int,
+              A=int
+          ]
+  
+  T8.vcxproj -> X:\Programming II\CAOD\T8\T8\x64\Debug\T8.exe

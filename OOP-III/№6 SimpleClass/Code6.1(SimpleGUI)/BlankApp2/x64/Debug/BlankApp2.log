@@ -1,0 +1,2 @@
+﻿  cppwinrt : error Path 'D:\RepositoryOOP\тДЦ6 SimpleClass\Code6.1(SimpleGUI)\BlankApp2\x64\Debug\Merged\BlankApp2.winmd' is not a file or directory
+D:\RepositoryOOP\№6 SimpleClass\Code6.1(SimpleGUI)\BlankApp2\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.targets(842,9): error MSB3073: выход из команды ""D:\RepositoryOOP\№6 SimpleClass\Code6.1(SimpleGUI)\BlankApp2\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\..\..\bin\"cppwinrt @"x64\Debug\BlankApp2.vcxproj.cppwinrt_comp.rsp"" с кодом 1.

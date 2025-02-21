@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="RadioButtonExample.MainWindow"
+        Title="RadioButton Example" Height="272" Width="290">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <StackPanel Margin="10,67,181,51">
+            <RadioButton x:Name="RUBrb" Content="RUB" Margin="0,0,0,10" IsChecked="True" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="USDrb" Content="USD" Margin="0,0,0,10" IsChecked="False" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="EURrb" Content="EUR" Margin="0,0,0,10" IsChecked="False" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="UANrb" Content="UAN" Margin="0,0,0,10" IsChecked="False" Checked="RadioButton_Checked"/>
+        </StackPanel>
+        <TextBox HorizontalAlignment="Left" Margin="104,57,0,0" TextWrapping="Wrap" Text="7500" VerticalAlignment="Top" Width="156" Background="#FF464646" Foreground="White" Height="34" FontSize="22"/>
+        <Label Content="Money-Change-Converter" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="18" FontFamily="Segoe UI" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="TextAnsw" HorizontalAlignment="Left" Margin="104,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="106" Width="156"/>
+    </Grid>
+</Window>

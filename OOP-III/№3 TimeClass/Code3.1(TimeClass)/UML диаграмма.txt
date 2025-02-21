@@ -1,0 +1,26 @@
+   +------------------------------------------------------------------------------+
+   |       				 Time  	       			          |
+   +------------------------------------------------------------------------------+
+   | - years: long         							  |
+   | - days: short          							  |
+   | - hours: char         							  |  
+   | - minutes: char       							  |
+   | - seconds: char       							  |
+   +------------------------------------------------------------------------------+
+   | + Time(y, d, h, m, s): years(y), days(d), hours(h), minutes(m), seconds(s) {}|
+   | + addTime(Time): void     							  |
+   | + subtractTime(Time): void							  |
+   | + addHours(int) :void     							  |
+   | + addYears(int) :void     							  |
+   | + addDays(int) :void      							  |
+   | + addMinutes(int) :void   							  |
+   | + addSeconds(int) :void   							  |
+   | + toSeconds()const :int   							  |
+   | + toMinutes()const :int   							  |
+   | + toHours()const :int     							  |
+   | + toDays()const :int      							  |
+   | + toYears()const :int     							  |
+   | + toString()const :string							  |
+   | + setTime(y, d, h, m, s) :void						  |
+   | + getTime(&y, &d, &h, &m, &s)const :void 					  |
+   +------------------------------------------------------------------------------+

@@ -1,0 +1,14 @@
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x.csproj.AssemblyReference.cache
+X:\Programming II\CAOD\T7\T7x\obj\Debug\MainWindow.baml
+X:\Programming II\CAOD\T7\T7x\obj\Debug\MainWindow.g.cs
+X:\Programming II\CAOD\T7\T7x\obj\Debug\App.g.cs
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x_MarkupCompile.cache
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x.g.resources
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x.Properties.Resources.resources
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x.csproj.GenerateResource.cache
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x.csproj.CoreCompileInputs.cache
+X:\Programming II\CAOD\T7\T7x\bin\Debug\T7x.exe.config
+X:\Programming II\CAOD\T7\T7x\bin\Debug\T7x.exe
+X:\Programming II\CAOD\T7\T7x\bin\Debug\T7x.pdb
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x.exe
+X:\Programming II\CAOD\T7\T7x\obj\Debug\T7x.pdb

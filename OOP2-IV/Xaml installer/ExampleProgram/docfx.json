@@ -1,0 +1,30 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "X:/Programming II\\Хамл\\TimeTimeTime\\TimeTimeTime.csproj"
+          ],
+          "exclude": [
+            "X:\\Programming II\\Хамл\\TimeTimeTime\\/obj/**",
+            "**/bin/**"
+          ]
+        }
+      ],
+      "properties": {
+        "TargetFramework": "netcoreapp3.1"
+      }
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "src/**/*.{cs,csproj}"
+        ]
+      }
+    ],
+    "dest": "docs/api"
+  }
+}

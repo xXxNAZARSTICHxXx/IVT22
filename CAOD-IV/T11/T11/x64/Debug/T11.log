@@ -1,0 +1,8 @@
+﻿  T11.cpp
+X:\Programming II\CAOD\T11\T11\T11Module.cpp(55,26): warning C4244: аргумент: преобразование "double" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "T11.cpp")
+  
+X:\Programming II\CAOD\T11\T11\T11Module.cpp(55,25): warning C4244: return: преобразование "unsigned __int64" в "double", возможна потеря данных
+  (компиляция исходного файла "T11.cpp")
+  
+  T11.vcxproj -> X:\Programming II\CAOD\T11\T11\x64\Debug\T11.exe

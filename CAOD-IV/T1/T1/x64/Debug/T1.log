@@ -1,0 +1,36 @@
+﻿  T1.cpp
+F:\CAOD\T1\T1\T1.cpp(28,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+F:\CAOD\T1\T1\T1Names.h(47,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  F:\CAOD\T1\T1\T1Names.h(47,10):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	F:\CAOD\T1\T1\T1Names.h(209,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void cocktail_sort<int>(size_t,A [])"
+          with
+          [
+              A=int
+          ]
+  
+F:\CAOD\T1\T1\T1Names.h(140,50): warning C4244: =: преобразование "double" в "A", возможна потеря данных
+F:\CAOD\T1\T1\T1Names.h(140,50): warning C4244:         with
+F:\CAOD\T1\T1\T1Names.h(140,50): warning C4244:         [
+F:\CAOD\T1\T1\T1Names.h(140,50): warning C4244:             A=int
+F:\CAOD\T1\T1\T1Names.h(140,50): warning C4244:         ]
+  (компиляция исходного файла "T1.cpp")
+  F:\CAOD\T1\T1\T1Names.h(140,50):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	F:\CAOD\T1\T1\T1.cpp(35,5):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "float filling_array<int>(size_t,A,A,A [])"
+          with
+          [
+              A=int
+          ]
+  
+F:\CAOD\T1\T1\T1Names.h(142,9): warning C4244: return: преобразование "A" в "float", возможна потеря данных
+F:\CAOD\T1\T1\T1Names.h(142,9): warning C4244:         with
+F:\CAOD\T1\T1\T1Names.h(142,9): warning C4244:         [
+F:\CAOD\T1\T1\T1Names.h(142,9): warning C4244:             A=int
+F:\CAOD\T1\T1\T1Names.h(142,9): warning C4244:         ]
+  (компиляция исходного файла "T1.cpp")
+  
+  T1.vcxproj -> F:\CAOD\T1\T1\x64\Debug\T1.exe

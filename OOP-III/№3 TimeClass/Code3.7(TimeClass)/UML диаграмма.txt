@@ -1,0 +1,52 @@
+   +---------------------------------------------------------------------------------------------------+
+   |       			  		    Time  	       				       |
+   +---------------------------------------------------------------------------------------------------+
+   | - years: long         							  		       |
+   | - days: short          							  		       |
+   | - hours: int        							  		       |  
+   | - minutes: int       							  		       |
+   | - seconds: long       							  		       |
+   | - microseconds: short       						  		       |
+   +---------------------------------------------------------------------------------------------------+
+   | + Time(y, d, h, m, s, mw): years(y), days(d), hours(h), minutes(m), seconds(s), microseconds(s) {}|
+   | + equate(): void						  		  		       |
+   | + addTime(Time): void     							  		       |
+   | + subtractTime(Time): void							  		       |			  
+   | + addYears(int): void     							  		       |
+   | + addDays(int): void     							  		       |
+   | + addHours(int): void      						  		       |	  
+   | + addMinutes(int): void   							  		       |
+   | + addSeconds(int): void 							  		       |
+   | + addMicroseconds(int): void 						  		       |
+   | + subtractYears(int): void     						  		       |	  
+   | + subtractDays(int): void     						  		       |	  
+   | + subtractHours(int): void      						  		       |	  
+   | + subtractMinutes(int): void   						  		       |	  
+   | + subtractSeconds(int): void 						  		       |
+   | + subtractMicroseconds(int): void 						  		       |
+   | + getYears(int): long     							  		       | 
+   | + getDays(int): short     							  		       | 
+   | + getHours(int): int      						  		       	       |	  
+   | + getMinutes(int): int   					          			       |	  
+   | + getSeconds(int): long  							  		       |
+   | + getMicroseconds(int): short  							  	       |
+   | + setYears(long): long     						  		       | 
+   | + setDays(short): short     						  		       | 
+   | + setHours(short): int      						  		       |	  
+   | + setMinutes(short): int   					          		       |	  
+   | + setSeconds(short): long  						  		       |
+   | + setMicroseconds(int): short  							  	       |
+   | + toMicroseconds(int): long  							  	       |
+   | + toSeconds()const: int   							  		       |
+   | + toMinutes()const: int   							  		       |
+   | + toHours()const: int     							  		       |
+   | + toDays()const: int      							  		       |
+   | + toYears()const: int     							  		       |
+   | + toString()const: string							  		       |
+   | + setTime(y, d, h, m, s): void						  		       |
+   | + getTime(&y, &d, &h, &m, &s)const: void 					  		       |
+   | + REALTime(long): void									       |
+   | + createDynamicArray(int): Time**								       |
+   | + deleteDynamicArray(Time**, int): void							       |
+   | + fillTimeArray(Time**, int, long, short, int, int, long, short): void			       |
+   +---------------------------------------------------------------------------------------------------+

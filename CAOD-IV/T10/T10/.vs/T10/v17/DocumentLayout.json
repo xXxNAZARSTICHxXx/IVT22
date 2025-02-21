@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T9Module.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:T9Module.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T10Module.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:T10Module.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C023D006-909C-4CD1-8FBB-969FD7B7EF71}|T10.vcxproj|X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C023D006-909C-4CD1-8FBB-969FD7B7EF71}|T10.vcxproj|solutionrelative:T10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "T10Module.cpp",
+              "DocumentMoniker": "X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T10Module.cpp",
+              "RelativeDocumentMoniker": "T10Module.cpp",
+              "ToolTip": "X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T10Module.cpp",
+              "RelativeToolTip": "T10Module.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T01:46:12.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "delete_scalar.cpp",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-07T16:49:39.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "T9Module.cpp",
+              "DocumentMoniker": "X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T9Module.cpp",
+              "RelativeDocumentMoniker": "T9Module.cpp",
+              "ToolTip": "X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T9Module.cpp",
+              "RelativeToolTip": "T9Module.cpp",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwLsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T01:46:12.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "T10.cpp",
+              "DocumentMoniker": "X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T10.cpp",
+              "RelativeDocumentMoniker": "T10.cpp",
+              "ToolTip": "X:\\Programming II\\CAOD-OOP-IVT22\\CAOD-IV\\T10\\T10\\T10.cpp",
+              "RelativeToolTip": "T10.cpp",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAB4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T01:46:12.394Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

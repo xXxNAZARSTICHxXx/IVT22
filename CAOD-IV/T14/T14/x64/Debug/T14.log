@@ -1,0 +1,5 @@
+﻿  T14.cpp
+X:\Programming II\CAOD\T14\T14\T14Module.cpp(75,37): warning C4101: e: неиспользованная локальная переменная
+  (компиляция исходного файла "T14.cpp")
+  
+  T14.vcxproj -> X:\Programming II\CAOD\T14\T14\x64\Debug\T14.exe

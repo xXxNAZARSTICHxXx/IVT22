@@ -1,0 +1,7 @@
+﻿  T2.cpp
+X:\Programming II\CAOD\T2\T2\T2NAMES.h(62,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T2.cpp")
+  
+X:\Programming II\CAOD\T2\T2\T2.cpp(41,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+X:\Programming II\CAOD\T2\T2\T2NAMES.h(88): warning C4715: compareCounts: значение возвращается не при всех путях выполнения
+  T2.vcxproj -> X:\Programming II\CAOD\T2\T2\x64\Debug\T2.exe

@@ -1,0 +1,30 @@
+﻿<Window x:Name="WindowLogin" x:Class="ChatBot.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBot"
+        mc:Ignorable="d"
+        Title="Tiligram" MinWidth="420" MaxWidth="420" MinHeight="419" MaxHeight="419" Width="419"
+        Closing="Window_Closing" Icon="/SendIN_PURPLE.png">
+    <Grid>
+        <Image x:Name="BGlogin" HorizontalAlignment="Center" Height="571" VerticalAlignment="Top" Width="419" Source="/BG_PURPLE.png" Stretch="Fill"/>
+        <Image x:Name="loginBG" HorizontalAlignment="Left" Height="55" Margin="22,154,0,0" VerticalAlignment="Top" Width="266" Stretch="Fill" Source="/ForOptionsPURPLE.png"/>
+        <Image x:Name="loginBUTTON" HorizontalAlignment="Left" Height="49" Margin="296,156,0,0" VerticalAlignment="Top" Width="86" Source="/MARK_PURPLE.png" Stretch="Fill"/>
+        <Image x:Name="CaptionCHAT" Height="95" Margin="34,22,0,0" VerticalAlignment="Top" Source="/ForOptionsPURPLE.png" Stretch="Fill" HorizontalAlignment="Left" Width="332"/>
+        <Image x:Name="StilisationBG" HorizontalAlignment="Left" Height="234" Margin="30,225,0,0" VerticalAlignment="Top" Width="340" Source="/FramePURPLE.png" Stretch="Fill"/>
+        <Image x:Name="AllColor1" Height="60" Margin="56,312,0,0" VerticalAlignment="Top" Stretch="Fill" Source="/ForMessagesPURPLE.png" Width="60" HorizontalAlignment="Left"/>
+        <Image x:Name="AllColor2" Height="60" Margin="132,312,0,0" VerticalAlignment="Top" Stretch="Fill" Source="/ForMessagesGREEN.png" Width="60" HorizontalAlignment="Left"/>
+        <Image x:Name="AllColor3" Margin="208,312,0,0" Stretch="Fill" Source="/ForMessagesBLUE.png" Height="60" VerticalAlignment="Top" Width="60" HorizontalAlignment="Left"/>
+        <Image x:Name="AllColor4" Margin="283,312,0,0" Stretch="Fill" Source="/ForMessagesYELLOW.png" Height="60" VerticalAlignment="Top" Width="60" HorizontalAlignment="Left"/>
+        <TextBox x:Name="LoginTextBox" HorizontalAlignment="Left" Margin="28,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="38" SelectionBrush="#00008EFF" Background="Transparent" BorderBrush="#00ABADB3" FontSize="27" Foreground="White" Text="Test" TabIndex="1"/>
+        <Button x:Name="LOGINin" Content="Button" HorizontalAlignment="Left" Margin="296,156,0,0" VerticalAlignment="Top" Height="49" Width="86" Background="#00000000" BorderBrush="#00707070" Foreground="#00000000" OpacityMask="#00000000" Click="LOGINin_Click" TabIndex="2"/>
+        <Label x:Name="StyleTEXT" Content="Цветовой стиль chatBot" HorizontalAlignment="Left" Margin="72,266,0,0" VerticalAlignment="Top" Foreground="White" Width="256" FontSize="22"/>
+        <TextBlock x:Name="HelloTEXT" HorizontalAlignment="Left" Margin="44,32,0,0" TextWrapping="Wrap" Text="Добро пожаловать в полуживой chatBot, для того, чтобы приступить к псевдообщению введите свой логин" VerticalAlignment="Top" Foreground="White" FontSize="16" Width="312" Height="74" TextAlignment="Center"/>
+        <Button x:Name="Color1" Content="Button" Margin="56,312,0,0" Foreground="#FFA3E4FF" BorderBrush="#00707070" OpacityMask="#00000000" Background="{x:Null}" Height="60" VerticalAlignment="Top" Width="60" HorizontalAlignment="Left" Click="Color1_Click" TabIndex="3"/>
+        <Button x:Name="Color2" Content="Button" Margin="132,312,0,0" Background="#00DDDDDD" Foreground="#FFA3E4FF" BorderBrush="#00707070" OpacityMask="#00000000" Height="60" VerticalAlignment="Top" Width="60" HorizontalAlignment="Left" Click="Color2_Click" TabIndex="4"/>
+        <Button x:Name="Color3" Content="Button" Margin="208,312,0,0" VerticalAlignment="Top" Height="60" Background="#00DDDDDD" Foreground="#FFA3E4FF" BorderBrush="#00707070" OpacityMask="#00000000" Width="60" HorizontalAlignment="Left" Click="Color3_Click" TabIndex="5"/>
+        <Button x:Name="Color4" Content="Button" Margin="283,312,0,0" VerticalAlignment="Top" Height="60" Background="#00DDDDDD" Foreground="#FFA3E4FF" BorderBrush="#00707070" OpacityMask="#00000000" Width="60" HorizontalAlignment="Left" Click="Color4_Click" TabIndex="6"/>
+
+    </Grid>
+</Window>

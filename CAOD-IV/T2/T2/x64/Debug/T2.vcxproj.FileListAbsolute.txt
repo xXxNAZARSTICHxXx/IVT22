@@ -1,0 +1,4 @@
+F:\OOP2\T2\T2\x64\Debug\T2.exe
+D:\CAOD\T2\T2\x64\Debug\T2.exe
+C:\Users\nazar\OneDrive\Рабочий стол\CAOD\T2\T2\x64\Debug\T2.exe
+X:\Programming II\CAOD\T2\T2\x64\Debug\T2.exe

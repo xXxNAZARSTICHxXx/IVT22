@@ -1,0 +1,21 @@
+﻿<Window x:Class="NTreeGraphic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NTreeGraphic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1920" Width="1080">
+    <Grid Margin="0,0,-22,-16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="135*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imgg" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Margin="2,0,0,0" Grid.ColumnSpan="2" Stretch="Fill" Source="/i.jpg"/>
+        <Rectangle Fill="Transparent" MouseLeftButtonDown="FullScreenPanel_MouseLeftButtonDown" HorizontalAlignment="Left" Width="2370" Grid.ColumnSpan="2" Margin="-18,-17,0,0" />
+        <Canvas Name="canvas" Grid.ColumnSpan="2" Margin="0,0,0,0" Width="960" Height="1060"/>
+        <TextBox x:Name="NodeCount" Grid.Column="1" HorizontalAlignment="Left" Margin="37,881,0,0" TextWrapping="Wrap" Text="63" VerticalAlignment="Top" Width="88" Height="52" FontSize="36"/>
+        <Button Grid.Column="1" Content="СГЕНЕРИРОВАТЬ ДЕРЕВО" HorizontalAlignment="Left" Margin="37,943,0,0" VerticalAlignment="Top" FontSize="48" Width="597" IsCancel="True" Click="Button_Click"/>
+        <Button Grid.Column="1" Content="SAVE" HorizontalAlignment="Left" Margin="224,895,0,0" VerticalAlignment="Top" Height="38" Width="169" FontSize="24" Click="Button_Click_1"/>
+    </Grid>
+</Window>

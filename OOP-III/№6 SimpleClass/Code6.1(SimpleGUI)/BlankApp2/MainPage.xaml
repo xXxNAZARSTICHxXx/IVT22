@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="BlankApp2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlankApp2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="400">
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid Height="400" Width="400">
+            <Button Content="Рассчитать сумму дробного ряда" Margin="24,235,0,0" VerticalAlignment="Top" Height="56" Click="Button_Click"/>
+            <TextBlock x:Name="OutputBox" HorizontalAlignment="Left" Height="37" Margin="24,308,0,0" TextWrapping="Wrap" Text="&lt;ваш ответ&gt;" VerticalAlignment="Top" Width="84"/>
+            <TextBox x:Name="InputBox" HorizontalAlignment="Left" Margin="48,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="113"/>
+            <TextBlock HorizontalAlignment="Left" Margin="24,0,0,0" TextWrapping="Wrap" Text="N:" VerticalAlignment="Center" FontWeight="Bold" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="24,120,0,0" TextWrapping="Wrap" Text="115а Дано натуральное число n. Вычислить: Сумма всех дробей циклом [1..n] 1/n" VerticalAlignment="Top" Width="287" SelectionChanged="TextBlock_SelectionChanged"/>
+            <TextBlock HorizontalAlignment="Left" Margin="24,30,0,0" TextWrapping="Wrap" Text="Simple GUI - Стич Назар ИВТ-22" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        </Grid>
+    </StackPanel>
+</Page>

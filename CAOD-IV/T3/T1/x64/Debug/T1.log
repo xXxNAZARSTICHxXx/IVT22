@@ -1,0 +1,108 @@
+﻿  T1.cpp
+X:\Programming II\CAOD\T3\T1\T1Names.h(282,11): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(299,11): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(301,22): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(331,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(334,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(337,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(340,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(344,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(348,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(351,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(354,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1.cpp(36,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+X:\Programming II\CAOD\T3\T1\T1.cpp(74,21): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+X:\Programming II\CAOD\T3\T1\T1.cpp(104,29): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+X:\Programming II\CAOD\T3\T1\T1.cpp(108,65): warning C4805: ==: небезопасное смешение типа "__int64" и типа "bool" в операции
+X:\Programming II\CAOD\T3\T1\T1.cpp(115,29): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+X:\Programming II\CAOD\T3\T1\T1.cpp(123,29): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+X:\Programming II\CAOD\T3\T1\T1Names.h(63,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  X:\Programming II\CAOD\T3\T1\T1Names.h(63,10):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T3\T1\T1Names.h(310,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void cocktail_sort<int>(size_t,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(47,9): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  X:\Programming II\CAOD\T3\T1\T1Names.h(47,9):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T3\T1\T1Names.h(315,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void insertion_sort<int>(size_t,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(249,14): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  X:\Programming II\CAOD\T3\T1\T1Names.h(249,14):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T3\T1\T1Names.h(337,9):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "__int64 interpolation_search<int>(A [],size_t,A)"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(161,50): warning C4244: =: преобразование "double" в "A", возможна потеря данных
+X:\Programming II\CAOD\T3\T1\T1Names.h(161,50): warning C4244:         with
+X:\Programming II\CAOD\T3\T1\T1Names.h(161,50): warning C4244:         [
+X:\Programming II\CAOD\T3\T1\T1Names.h(161,50): warning C4244:             A=int
+X:\Programming II\CAOD\T3\T1\T1Names.h(161,50): warning C4244:         ]
+  (компиляция исходного файла "T1.cpp")
+  X:\Programming II\CAOD\T3\T1\T1Names.h(161,50):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T3\T1\T1.cpp(43,5):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "float filling_array<int>(size_t,A,A,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(163,9): warning C4244: return: преобразование "A" в "float", возможна потеря данных
+X:\Programming II\CAOD\T3\T1\T1Names.h(163,9): warning C4244:         with
+X:\Programming II\CAOD\T3\T1\T1Names.h(163,9): warning C4244:         [
+X:\Programming II\CAOD\T3\T1\T1Names.h(163,9): warning C4244:             A=int
+X:\Programming II\CAOD\T3\T1\T1Names.h(163,9): warning C4244:         ]
+  (компиляция исходного файла "T1.cpp")
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(168,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "T1.cpp")
+  X:\Programming II\CAOD\T3\T1\T1Names.h(168,14):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T3\T1\T1.cpp(74,9):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "float randomX<int>(A,A)"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T3\T1\T1Names.h(367): warning C4715: `assert_run'::`2'::<lambda_2>::operator(): значение возвращается не при всех путях выполнения
+  T1.vcxproj -> X:\Programming II\CAOD\T3\T1\x64\Debug\T1.exe

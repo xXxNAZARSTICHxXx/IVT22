@@ -1,0 +1,42 @@
+   +------------------------------------------------------------------------------+
+   |       				 Time  	       			          |
+   +------------------------------------------------------------------------------+
+   | - years: long         							  |
+   | - days: short          							  |
+   | - hours: short        							  |  
+   | - minutes: short       							  |
+   | - seconds: short       							  |
+   +------------------------------------------------------------------------------+
+   | + Time(y, d, h, m, s): years(y), days(d), hours(h), minutes(m), seconds(s) {}|
+   | + addTime(Time): void     							  |
+   | + subtractTime(Time): void							  |			  
+   | + addYears(int): void     							  |
+   | + addDays(int): void     							  |
+   | + addHours(int): void      						  |	  
+   | + addMinutes(int): void   							  |
+   | + addSeconds(int): void 							  |
+   | + subtractYears(int): void     						  |	  
+   | + subtractDays(int): void     						  |	  
+   | + subtractHours(int): void      						  |	  
+   | + subtractMinutes(int): void   						  |	  
+   | + subtractSeconds(int): void 						  |
+   | + getYears(int): long     							  | 
+   | + getDays(int): short     							  | 
+   | + getHours(int): short      						  |	  
+   | + getMinutes(int): short   					          |	  
+   | + getSeconds(int): short  							  |
+   | + setYears(int): long     							  | 
+   | + setDays(int): short     							  | 
+   | + setHours(int): short      						  |	  
+   | + setMinutes(int): short   					          |	  
+   | + setSeconds(int): short  							  |
+   | + equate(): void						  		  |
+   | + toSeconds()const: int   							  |
+   | + toMinutes()const: int   							  |
+   | + toHours()const: int     							  |
+   | + toDays()const: int      							  |
+   | + toYears()const: int     							  |
+   | + toString()const: string							  |
+   | + setTime(y, d, h, m, s) :void						  |
+   | + getTime(&y, &d, &h, &m, &s)const :void 					  |
+   +------------------------------------------------------------------------------+

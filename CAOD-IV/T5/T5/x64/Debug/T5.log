@@ -1,0 +1,115 @@
+﻿  T5.cpp
+X:\Programming II\CAOD\T5\T5\T5Names.h(479,11): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(481,22): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(635,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(638,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(641,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(644,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(648,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(652,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(655,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(658,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5.cpp(46,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+X:\Programming II\CAOD\T5\T5\T5.cpp(87,117): warning C4244: =: преобразование "_Rep" в "int", возможна потеря данных
+X:\Programming II\CAOD\T5\T5\T5.cpp(87,117): warning C4244:         with
+X:\Programming II\CAOD\T5\T5\T5.cpp(87,117): warning C4244:         [
+X:\Programming II\CAOD\T5\T5\T5.cpp(87,117): warning C4244:             _Rep=__int64
+X:\Programming II\CAOD\T5\T5\T5.cpp(87,117): warning C4244:         ]
+X:\Programming II\CAOD\T5\T5\T5.cpp(114,117): warning C4244: =: преобразование "_Rep" в "int", возможна потеря данных
+X:\Programming II\CAOD\T5\T5\T5.cpp(114,117): warning C4244:         with
+X:\Programming II\CAOD\T5\T5\T5.cpp(114,117): warning C4244:         [
+X:\Programming II\CAOD\T5\T5\T5.cpp(114,117): warning C4244:             _Rep=__int64
+X:\Programming II\CAOD\T5\T5\T5.cpp(114,117): warning C4244:         ]
+X:\Programming II\CAOD\T5\T5\T5.cpp(120,117): warning C4244: =: преобразование "_Rep" в "int", возможна потеря данных
+X:\Programming II\CAOD\T5\T5\T5.cpp(120,117): warning C4244:         with
+X:\Programming II\CAOD\T5\T5\T5.cpp(120,117): warning C4244:         [
+X:\Programming II\CAOD\T5\T5\T5.cpp(120,117): warning C4244:             _Rep=__int64
+X:\Programming II\CAOD\T5\T5\T5.cpp(120,117): warning C4244:         ]
+X:\Programming II\CAOD\T5\T5\T5Names.h(67,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  X:\Programming II\CAOD\T5\T5\T5Names.h(67,10):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T5\T5\T5Names.h(492,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void cocktail_sort<int>(size_t,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(50,9): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  X:\Programming II\CAOD\T5\T5\T5Names.h(50,9):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T5\T5\T5Names.h(497,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void insertion_sort<int>(size_t,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(373,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  X:\Programming II\CAOD\T5\T5\T5Names.h(373,15):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T5\T5\T5Names.h(512,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void shellSort<int>(A [],size_t)"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(253,14): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+  (компиляция исходного файла "T5.cpp")
+  X:\Programming II\CAOD\T5\T5\T5Names.h(253,14):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T5\T5\T5Names.h(641,9):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "__int64 interpolation_search<int>(A [],size_t,A)"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(165,50): warning C4244: =: преобразование "double" в "A", возможна потеря данных
+X:\Programming II\CAOD\T5\T5\T5Names.h(165,50): warning C4244:         with
+X:\Programming II\CAOD\T5\T5\T5Names.h(165,50): warning C4244:         [
+X:\Programming II\CAOD\T5\T5\T5Names.h(165,50): warning C4244:             A=int
+X:\Programming II\CAOD\T5\T5\T5Names.h(165,50): warning C4244:         ]
+  (компиляция исходного файла "T5.cpp")
+  X:\Programming II\CAOD\T5\T5\T5Names.h(165,50):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T5\T5\T5.cpp(53,9):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "float filling_array<int>(size_t,A,A,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(167,9): warning C4244: return: преобразование "A" в "float", возможна потеря данных
+X:\Programming II\CAOD\T5\T5\T5Names.h(167,9): warning C4244:         with
+X:\Programming II\CAOD\T5\T5\T5Names.h(167,9): warning C4244:         [
+X:\Programming II\CAOD\T5\T5\T5Names.h(167,9): warning C4244:             A=int
+X:\Programming II\CAOD\T5\T5\T5Names.h(167,9): warning C4244:         ]
+  (компиляция исходного файла "T5.cpp")
+  
+X:\Programming II\CAOD\T5\T5\T5Names.h(671): warning C4715: `assert_run'::`2'::<lambda_2>::operator(): значение возвращается не при всех путях выполнения
+  T5.vcxproj -> X:\Programming II\CAOD\T5\T5\x64\Debug\T5.exe

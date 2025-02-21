@@ -1,0 +1,7 @@
+﻿  T10.cpp
+X:\Programming II\CAOD-OOP-IVT22\CAOD\T10\T10\T10.cpp(34,24): warning C4244: аргумент: преобразование "double" в "const T", возможна потеря данных
+X:\Programming II\CAOD-OOP-IVT22\CAOD\T10\T10\T10.cpp(34,24): warning C4244:         with
+X:\Programming II\CAOD-OOP-IVT22\CAOD\T10\T10\T10.cpp(34,24): warning C4244:         [
+X:\Programming II\CAOD-OOP-IVT22\CAOD\T10\T10\T10.cpp(34,24): warning C4244:             T=int
+X:\Programming II\CAOD-OOP-IVT22\CAOD\T10\T10\T10.cpp(34,24): warning C4244:         ]
+  T10.vcxproj -> X:\Programming II\CAOD-OOP-IVT22\CAOD\T10\T10\x64\Debug\T10.exe

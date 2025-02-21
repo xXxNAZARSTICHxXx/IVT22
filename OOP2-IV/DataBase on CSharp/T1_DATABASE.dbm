@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.3-beta1" use-changelog="false" last-position="46,138" last-zoom="0.95" max-obj-count="8"
+	 default-schema="public" default-owner="postgres">
+<database name="new_database" is-template="false" allow-conns="true">
+</database>
+
+<schema name="public" layer="0" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="Кампания" layer="0" collapse-mode="2" max-obj-count="7" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="220" y="100"/>
+	<column name="ИНН" not-null="true">
+		<type name="bigint" length="0"/>
+	</column>
+	<column name="Наименование">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Дата основания">
+		<type name="date" length="0"/>
+	</column>
+	<column name="Адрес">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Телефон">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Владелец">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="Кампания_pk" type="pk-constr" table="public.&quot;Кампания&quot;">
+		<columns names="ИНН" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="Сотрудник" layer="0" collapse-mode="2" max-obj-count="9" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="220" y="860"/>
+	<column name="Фамилия">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Имя">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Отчество">
+		<type name="text" length="0"/>
+	</column>
+	<column name="День рождения">
+		<type name="date" length="0"/>
+	</column>
+	<column name="Должность">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Серия паспорта" not-null="true">
+		<type name="bigint" length="0"/>
+	</column>
+	<column name="Номер паспорта" not-null="true">
+		<type name="bigint" length="0"/>
+	</column>
+	<constraint name="Сотрудник_pk" type="pk-constr" table="public.&quot;Сотрудник&quot;">
+		<columns names="Серия паспорта,Номер паспорта" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="ИНН_Кампания" index="7"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Кампания_fk" index="1"/>
+	</customidxs>
+</table>
+
+<table name="Покупатель" layer="0" collapse-mode="2" max-obj-count="7" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="600" y="480"/>
+	<column name="Фамилия">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Имя">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Отчество">
+		<type name="text" length="0"/>
+	</column>
+	<column name="День рождения">
+		<type name="date" length="0"/>
+	</column>
+	<column name="Серия паспорта" not-null="true">
+		<type name="bigint" length="0"/>
+	</column>
+	<column name="Номер паспорта" not-null="true">
+		<type name="bigint" length="0"/>
+	</column>
+	<constraint name="Покупатель_pk" type="pk-constr" table="public.&quot;Покупатель&quot;">
+		<columns names="Серия паспорта,Номер паспорта" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="Товар" layer="0" collapse-mode="2" max-obj-count="8" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1200" y="100"/>
+	<column name="ID" not-null="true">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="Наименование">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Оптовая цена">
+		<type name="float" length="0"/>
+	</column>
+	<column name="Розничная цена">
+		<type name="float" length="0"/>
+	</column>
+	<column name="Справочная информация">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Страна производитель">
+		<type name="text" length="0"/>
+	</column>
+	<column name="Минимальный кол-во оптовой цены">
+		<type name="smallint" length="0"/>
+	</column>
+	<constraint name="Товар_pk" type="pk-constr" table="public.&quot;Товар&quot;">
+		<columns names="ID" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="Кампания_has_many_Сотрудник" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#1091ea"
+	 src-table="public.&quot;Кампания&quot;"
+	 dst-table="public.&quot;Сотрудник&quot;"
+	 src-required="false" dst-required="false"/>
+
+<table name="Покупка" layer="0" collapse-mode="2" max-obj-count="9" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1240" y="640"/>
+	<column name="id" not-null="true">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="Дата">
+		<type name="date" length="0"/>
+	</column>
+	<column name="Скидка">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="Общая стоимость">
+		<type name="smallint" length="0"/>
+	</column>
+	<constraint name="Покупка_pk" type="pk-constr" table="public.&quot;Покупка&quot;">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="Номер паспорта_Покупатель" index="7"/>
+		<object name="Номер паспорта_Сотрудник" index="5"/>
+		<object name="Серия паспорта_Покупатель" index="6"/>
+		<object name="Серия паспорта_Сотрудник" index="4"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Покупатель_fk" index="2"/>
+		<object name="Сотрудник_fk" index="1"/>
+	</customidxs>
+</table>
+
+<table name="many_Товар_has_many_Покупка" layer="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="public"/>
+	<position x="1200" y="400"/>
+	<column name="Количество товара">
+		<type name="smallint" length="0"/>
+	</column>
+
+	<customidxs object-type="column">
+		<object name="ID_Товар" index="0"/>
+		<object name="id_Покупка" index="1"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="many_Товар_has_many_Покупка_pk" index="0"/>
+		<object name="Покупка_fk" index="2"/>
+		<object name="Товар_fk" index="1"/>
+	</customidxs>
+</table>
+
+<relationship name="Товар_has_many_many_Товар_has_many_Покупка" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 src-table="public.&quot;Товар&quot;"
+	 dst-table="public.&quot;many_Товар_has_many_Покупка&quot;"
+	 src-required="true" dst-required="false"
+	 identifier="true"
+/>
+
+<relationship name="Покупка_has_many_many_Товар_has_many_Покупка" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 src-table="public.&quot;Покупка&quot;"
+	 dst-table="public.&quot;many_Товар_has_many_Покупка&quot;"
+	 src-required="true" dst-required="false"
+	 identifier="true"
+/>
+
+<table name="many_Кампания_has_many_Товар" layer="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="public"/>
+	<position x="640" y="100"/>
+</table>
+
+<relationship name="Кампания_has_many_many_Кампания_has_many_Товар" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 src-table="public.&quot;Кампания&quot;"
+	 dst-table="public.&quot;many_Кампания_has_many_Товар&quot;"
+	 src-required="true" dst-required="false"
+	 identifier="true"
+/>
+
+<relationship name="Товар_has_many_many_Кампания_has_many_Товар" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 src-table="public.&quot;Товар&quot;"
+	 dst-table="public.&quot;many_Кампания_has_many_Товар&quot;"
+	 src-required="true" dst-required="false"
+	 identifier="true"
+/>
+
+<relationship name="Сотрудник_has_many_Покупка" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#c59294"
+	 src-table="public.&quot;Сотрудник&quot;"
+	 dst-table="public.&quot;Покупка&quot;"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="Покупатель_has_many_Покупка" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#357a0b"
+	 src-table="public.&quot;Покупатель&quot;"
+	 dst-table="public.&quot;Покупка&quot;"
+	 src-required="false" dst-required="false"/>
+
+</dbmodel>

@@ -1,0 +1,7 @@
+﻿  T4.cpp
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 26 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+X:\Programming II\CAOD\T4\T4\T4.h(29): warning C4717: infinityRecursion: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+  Создание кода завершено
+  T4.vcxproj -> X:\Programming II\CAOD\T4\T4\x64\Release\T4.exe

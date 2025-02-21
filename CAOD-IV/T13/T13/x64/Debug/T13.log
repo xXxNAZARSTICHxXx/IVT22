@@ -1,0 +1,113 @@
+﻿  T13.cpp
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(480,11): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(482,22): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(636,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(639,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(642,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(645,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(649,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(653,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(656,27): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(659,34): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(13,13): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(16,24): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(61,5): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(62,5): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(63,5): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(64,5): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(65,5): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(66,20): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(67,21): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(68,21): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(69,21): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T13Module.cpp(70,21): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(67,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  X:\Programming II\CAOD\T13\T13\T5Module.cpp(67,10):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T13\T13\T5Module.cpp(493,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void cocktail_sort<int>(size_t,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(50,9): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  X:\Programming II\CAOD\T13\T13\T5Module.cpp(50,9):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T13\T13\T5Module.cpp(498,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void insertion_sort<int>(size_t,A [])"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(374,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  X:\Programming II\CAOD\T13\T13\T5Module.cpp(374,15):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T13\T13\T5Module.cpp(513,2):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "void shellSort<int>(A [],size_t)"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(253,14): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+  (компиляция исходного файла "T13.cpp")
+  X:\Programming II\CAOD\T13\T13\T5Module.cpp(253,14):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	X:\Programming II\CAOD\T13\T13\T5Module.cpp(642,9):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "__int64 interpolation_search<int>(A [],size_t,A)"
+          with
+          [
+              A=int
+          ]
+  
+X:\Programming II\CAOD\T13\T13\T5Module.cpp(672): warning C4715: `assert_run'::`2'::<lambda_2>::operator(): значение возвращается не при всех путях выполнения
+  T13.vcxproj -> X:\Programming II\CAOD\T13\T13\x64\Debug\T13.exe

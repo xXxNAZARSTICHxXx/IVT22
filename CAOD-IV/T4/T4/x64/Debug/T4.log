@@ -1,0 +1,3 @@
+﻿  T4.cpp
+X:\Programming II\CAOD\T4\T4\T4.h(29): warning C4717: infinityRecursion: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+  T4.vcxproj -> X:\Programming II\CAOD\T4\T4\x64\Debug\T4.exe
