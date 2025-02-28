@@ -3,8 +3,15 @@ import T3Module
 
 __author__ = "Стич Назар Иванович ИВТ-22"
 
-print("Задание 3 - 64: Дано натуральное число n (n > 99). Определить число сотен в нем\n")
+TASK_DESCRIPTION = """Задание 3 - 64: 
+Дано натуральное число n (n > 99). Определить число сотен в нем.\n"""
 
+# Проверка на аргумент "-help"
+if len(sys.argv) == 2 and sys.argv[1] == "-help":
+    print(TASK_DESCRIPTION)
+    sys.exit(0)  # Завершаем программу после вывода справки
+
+print(TASK_DESCRIPTION)
 T3Module.assert_check()
 
 # Проверяем, передан ли аргумент
