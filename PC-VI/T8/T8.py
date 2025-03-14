@@ -18,22 +18,18 @@ if len(sys.argv) == 2 and sys.argv[1] == "-help":
 print(TASK_DESCRIPTION)
 
 # Проверяем, переданы ли аргументы через командную строку
-if len(sys.argv) >= 12:  # n + 10 элементов массива + n * n элементов матрицы
+if len(sys.argv) >= 12:
     try:
-        # Читаем порядок матрицы n
         n = int(sys.argv[1])
         if n <= 0:
             raise ValueError("Порядок матрицы n должен быть натуральным (n > 0).")
 
-        # Читаем массив a (10 элементов)
         a = np.array([int(arg) for arg in sys.argv[2:12]])
-
-        # Читаем матрицу n x n
         matrix_elements = np.array([int(arg) for arg in sys.argv[12:]])
+
         if matrix_elements.size != n * n:
             raise ValueError(f"Ошибка: ожидалось {n * n} элементов матрицы, но передано {matrix_elements.size}.")
 
-        # Формируем матрицу n x n
         matrix = matrix_elements.reshape(n, n)
 
     except ValueError as e:
@@ -50,26 +46,14 @@ else:
         except ValueError:
             print("Ошибка: введите корректное натуральное число.")
 
-    # Ввод массива a (10 элементов)
-    a = np.zeros(10, dtype=int)
-    for i in range(10):
-        while True:
-            try:
-                a[i] = int(input(f"Введите элемент a{i + 1}: "))
-                break
-            except ValueError:
-                print("Ошибка: введите корректное целое число.")
+    # Генерируем случайную матрицу и массив
+    matrix, a = T8Module.generate_matrix_and_array(n)
 
-    # Ввод матрицы n x n
-    matrix = np.zeros((n, n), dtype=int)
-    for i in range(n):
-        for j in range(n):
-            while True:
-                try:
-                    matrix[i, j] = int(input(f"Введите элемент матрицы [{i + 1}][{j + 1}]: "))
-                    break
-                except ValueError:
-                    print("Ошибка: введите корректное целое число.")
+    print("\nСгенерированная матрица:")
+    T8Module.print_matrix(matrix)
+
+    print("\nСгенерированный массив a:")
+    print(" ".join(map(str, a)))
 
 # Выполняем замену элементов
 T8Module.replace_elements_with_zeros(matrix, a)

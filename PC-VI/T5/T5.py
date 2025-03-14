@@ -1,7 +1,7 @@
 import sys
+import random
 import T5Module
-# не в кажой папке, можно создать проект глобальнее в ТВП папке
-# генератор add
+
 __author__ = "Стич Назар Иванович ИВТ-22"
 
 TASK_DESCRIPTION = """Задание 5 - 136д:
@@ -18,20 +18,37 @@ print(TASK_DESCRIPTION)
 
 T5Module.assert_check()
 
+numbers = []  # Список чисел
+
 # Проверяем, переданы ли аргументы
 if len(sys.argv) >= 3:
-    try:
-        n = int(sys.argv[1])
-        if n <= 0:
-            raise ValueError("Число n должно быть натуральным (n > 0).")
+    if sys.argv[1] == "-random" and len(sys.argv) == 5:
+        try:
+            n = int(sys.argv[2])
+            min_val = float(sys.argv[3])
+            max_val = float(sys.argv[4])
 
-        numbers = [float(arg) for arg in sys.argv[2:]]
-        if len(numbers) != n:
-            raise ValueError(f"Ошибка: ожидалось {n} чисел, но передано {len(numbers)}.")
-    except ValueError as e:
-        print(f"Ошибка: {e}")
-        sys.exit(1)
+            if n <= 0 or min_val > max_val:
+                raise ValueError("Ошибка: длина массива должна быть > 0, а min <= max.")
 
+            numbers = T5Module.get_random_numbers(n, min_val, max_val)
+            print(f"Сгенерированный массив: {numbers}")
+
+        except ValueError as e:
+            print(f"Ошибка: {e}")
+            sys.exit(1)
+    else:
+        try:
+            n = int(sys.argv[1])
+            if n <= 0:
+                raise ValueError("Число n должно быть натуральным (n > 0).")
+
+            numbers = [float(arg) for arg in sys.argv[2:]]
+            if len(numbers) != n:
+                raise ValueError(f"Ошибка: ожидалось {n} чисел, но передано {len(numbers)}.")
+        except ValueError as e:
+            print(f"Ошибка: {e}")
+            sys.exit(1)
 else:
     while True:
         try:
@@ -43,7 +60,6 @@ else:
         except ValueError:
             print("Ошибка: введите корректное натуральное число.")
 
-    numbers = []
     for i in range(n):
         while True:
             try:
@@ -54,7 +70,7 @@ else:
                 print("Ошибка: введите корректное число.")
 
 # Вычисляем сумму квадратов
-result = T5Module.compute_sum_of_squares(n, numbers)
+result = T5Module.compute_sum_of_squares(numbers)
 
 # Выводим результат
 print(f"Сумма квадратов чисел: {result:.6f}")

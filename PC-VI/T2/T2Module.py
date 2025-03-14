@@ -1,4 +1,5 @@
-from typing import Tuple
+import random
+from typing import Tuple, List
 
 __author__ = "Стич Назар Иванович ИВТ-22"
 
@@ -29,9 +30,24 @@ def print_numbers(x: float, y: float, z: float):
     :param y: Второе число
     :param z: Третье число
     """
-    print(f"Число X: {x:.2f}")
-    print(f"Число Y: {y:.2f}")
-    print(f"Число Z: {z:.2f}")
+    print(f"Число X: {x:.4f}")
+    print(f"Число Y: {y:.4f}")
+    print(f"Число Z: {z:.4f}")
+
+
+def generate_random_numbers(min_vals: List[float], max_vals: List[float]) -> Tuple[float, float, float]:
+    """
+    Генерирует три случайных числа в заданных диапазонах с 4 знаками после запятой.
+
+    :param min_vals: Список из 3 минимальных значений
+    :param max_vals: Список из 3 максимальных значений
+    :return: Кортеж из трех случайных чисел
+    """
+    return (
+        round(random.uniform(min_vals[0], max_vals[0]), 4),
+        round(random.uniform(min_vals[1], max_vals[1]), 4),
+        round(random.uniform(min_vals[2], max_vals[2]), 4)
+    )
 
 
 def assert_check():

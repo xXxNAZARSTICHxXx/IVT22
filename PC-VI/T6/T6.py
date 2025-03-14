@@ -1,6 +1,6 @@
 import sys
 import T6Module
-# DRY по списку и случайный ввод
+
 __author__ = "Стич Назар Иванович ИВТ-22"
 
 TASK_DESCRIPTION = """Задание 6 - 178б:
@@ -19,17 +19,31 @@ T6Module.assert_check()
 
 # Проверяем, переданы ли аргументы
 if len(sys.argv) >= 3:
-    try:
-        n = int(sys.argv[1])
-        if n <= 0:
-            raise ValueError("Число n должно быть натуральным (n > 0).")
+    if sys.argv[1] == "-random":
+        try:
+            n = int(sys.argv[2])
+            min_val = int(sys.argv[3])
+            max_val = int(sys.argv[4])
 
-        numbers = [int(arg) for arg in sys.argv[2:]]
-        if len(numbers) != n:
-            raise ValueError(f"Ошибка: ожидалось {n} чисел, но передано {len(numbers)}.")
-    except ValueError as e:
-        print(f"Ошибка: {e}")
-        sys.exit(1)
+            numbers = T6Module.get_random_numbers(n, min_val, max_val)
+            print(f"Сгенерированные числа: {numbers}")
+
+        except ValueError as e:
+            print(f"Ошибка: {e}")
+            sys.exit(1)
+
+    else:
+        try:
+            n = int(sys.argv[1])
+            if n <= 0:
+                raise ValueError("Число n должно быть натуральным (n > 0).")
+
+            numbers = [int(arg) for arg in sys.argv[2:]]
+            if len(numbers) != n:
+                raise ValueError(f"Ошибка: ожидалось {n} чисел, но передано {len(numbers)}.")
+        except ValueError as e:
+            print(f"Ошибка: {e}")
+            sys.exit(1)
 
 else:
     while True:

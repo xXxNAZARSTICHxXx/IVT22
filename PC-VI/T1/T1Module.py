@@ -1,4 +1,5 @@
-from typing import Tuple
+import random
+from typing import Tuple, List
 
 __author__ = "Стич Назар Иванович ИВТ-22"
 
@@ -25,7 +26,17 @@ def print_result(result: float) -> None:
     if result == float('inf'):
         print("Ошибка: деление на ноль.")
     else:
-        print(f"Результат: {result:.2f}")
+        print(f"Результат: {result:.4f}")  # Вывод с 4 знаками после запятой
+
+#yeild
+def generate_random_numbers(count: int = 2) -> List[float]:
+    """
+    Генерирует заданное количество случайных чисел с четырьмя знаками после запятой.
+
+    :param count: Количество чисел (по умолчанию 2)
+    :return: Список случайных чисел
+    """
+    return [round(random.uniform(-10, 10), 4) for _ in range(count)]
 
 
 def assert_check() -> None:

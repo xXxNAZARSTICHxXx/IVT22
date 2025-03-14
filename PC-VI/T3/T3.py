@@ -9,20 +9,24 @@ TASK_DESCRIPTION = """Задание 3 - 64:
 # Проверка на аргумент "-help"
 if len(sys.argv) == 2 and sys.argv[1] == "-help":
     print(TASK_DESCRIPTION)
-    sys.exit(0)  # Завершаем программу после вывода справки
+    sys.exit(0)
 
 print(TASK_DESCRIPTION)
 T3Module.assert_check()
 
-# Проверяем, передан ли аргумент
+# Проверяем аргументы командной строки
 if len(sys.argv) == 2:
-    try:
-        n = int(sys.argv[1])
-        if n <= 99:
-            raise ValueError
-    except ValueError:
-        print("Ошибка: необходимо ввести натуральное число больше 99.")
-        sys.exit(1)
+    if sys.argv[1] == "-random":
+        n = T3Module.generate_random_number()
+        print(f"Сгенерированное число: {n}")
+    else:
+        try:
+            n = int(sys.argv[1])
+            if n <= 99:
+                raise ValueError
+        except ValueError:
+            print("Ошибка: необходимо ввести натуральное число больше 99.")
+            sys.exit(1)
 else:
     while True:
         try:

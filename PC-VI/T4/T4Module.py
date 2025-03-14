@@ -1,31 +1,44 @@
+import random
 from typing import List
-# массовость
+
 __author__ = "Стич Назар Иванович ИВТ-22"
 
-def factorial(n: int) -> int:
-    """
-    Вычисляет факториал числа n.
 
-    :param n: Число для вычисления факториала
-    :return: Факториал числа n
-    """
-    result = 1
-    for i in range(1, n + 1):
-        result *= i
-    return result
 
 
 def compute_sum(n: int) -> float:
     """
-    Вычисляет сумму: \sum_{i=1}^{10} \frac{1}{i!}
+    Вычисляет сумму: ∑ (от i=1 до n) 1/i!, используя предвычисленные факториалы.
 
     :param n: Количество итераций суммы выражения - включительно
     :return: Результат вычисления суммы
     """
-    total = 0
-    for i in range(1, n+1):
-        total += 1 / factorial(i)
+    factorials = precompute_factorials(n)
+    total = sum(1 / factorials[i] for i in range(1, n + 1))
     return total
+
+# факториал не вычислять постоянно, а где-то хранить TODO
+
+def precompute_factorials(n: int) -> List[int]:
+    """
+    Вычисляет и сохраняет факториалы от 0 до n.
+
+    :param n: Верхняя граница вычисления факториалов
+    :return: Список факториалов от 0! до n!
+    """
+    factorials = [1] * (n + 1)
+    for i in range(2, n + 1):
+        factorials[i] = factorials[i - 1] * i
+    return factorials
+
+def generate_random_iterations() -> int:
+    """
+    Генерирует случайное количество итераций от 1 до 100.
+
+    :return: Случайное число итераций
+    """
+    return random.randint(1, 100)
+
 
 def assert_check():
     """
@@ -34,12 +47,4 @@ def assert_check():
     assert abs(compute_sum(1) - 1.0) < 1e-6
     assert abs(compute_sum(2) - 1.5) < 1e-6
     assert abs(compute_sum(3) - 1.666667) < 1e-6
-    assert factorial(3) == 6
-    assert factorial(5) == 120
-    assert factorial(7) == 5040
-
-
-
-
-
-
+    assert 1 <= generate_random_iterations() <= 100
