@@ -19,16 +19,16 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  final List<String> imageUrls = [
-    'https://images.steamusercontent.com/ugc/2289584579656747715/B186C40800D8E91221D2351401A15321455CA732/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
-    'https://images.steamusercontent.com/ugc/2288456143558874093/15F50EC251CF208DE9FFDCAF39B4FFCC0870F56A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
-    'https://images.steamusercontent.com/ugc/2289584038852066896/532D024D691108AE98DC040B15AA175A90BF8F26/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DTHx00CTNRylQBQCxzrbo7wQqKPDG8qYVQ&s',
-    'https://images.steamusercontent.com/ugc/2443837305411181220/1B0C3F261269AC829FD7B8A60A20E17CD5E93466/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
-    'https://steamuserimages-a.akamaihd.net/ugc/2289584038860287315/EA1A15F9C89D5CEE310B58CFD2C4C65033BDBAF3/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
-    'https://steamuserimages-a.akamaihd.net/ugc/2296340613030288972/E657E58B01D86BB8DD75FA5C892772D6C0B6DC93/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
-    'https://art.pixilart.com/55149fb6d4bd657.png',
-    'https://images.steamusercontent.com/ugc/2292958473549295139/0ECA452030B24F305E9CECBEDFD2F2BCEC698960/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
+  final List<String> imagePaths = [
+    'assets/images/1.jpg',
+    'assets/images/2.jpg',
+    'assets/images/3.jpg',
+    'assets/images/4.jpg',
+    'assets/images/5.jpg',
+    'assets/images/6.jpg',
+    'assets/images/7.jpg',
+    'assets/images/8.jpg',
+    'assets/images/9.jpg',
   ];
 
   @override
@@ -40,27 +40,27 @@ class MyHomePage extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              buildImageContainer(imageUrls[0]),
-              buildImageContainer(imageUrls[1]),
-              buildImageContainer(imageUrls[2]),
-            ],
-          ),
-          SizedBox(height: 10), 
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              buildImageContainer(imageUrls[3]),
-              buildImageContainer(imageUrls[4]),
-              buildImageContainer(imageUrls[5]),
+              buildImageContainer(imagePaths[0]),
+              buildImageContainer(imagePaths[1]),
+              buildImageContainer(imagePaths[2]),
             ],
           ),
           SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              buildImageContainer(imageUrls[6]),
-              buildImageContainer(imageUrls[7]),
-              buildImageContainer(imageUrls[8]),
+              buildImageContainer(imagePaths[3]),
+              buildImageContainer(imagePaths[4]),
+              buildImageContainer(imagePaths[5]),
+            ],
+          ),
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              buildImageContainer(imagePaths[6]),
+              buildImageContainer(imagePaths[7]),
+              buildImageContainer(imagePaths[8]),
             ],
           ),
         ],
@@ -68,8 +68,7 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
-
-  Widget buildImageContainer(String imageUrl) {
+  Widget buildImageContainer(String imagePath) {
     return Container(
       width: 100,
       height: 100,
@@ -79,7 +78,10 @@ class MyHomePage extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
-        child: Image.network(imageUrl, fit: BoxFit.cover),
+        child: Image.asset(
+          imagePath,
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }
