@@ -11,7 +11,7 @@ class RoverScreen extends StatelessWidget {
       create: (_) => RoverCubit()..loadData(),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Mars Rover Photos'), // Используем const
+          title: const Text('Mars Rover Photos'), 
         ),
         body: BlocBuilder<RoverCubit, RoverState>(
           builder: (context, state) {
@@ -55,14 +55,14 @@ class RoverScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('Error loading data'), // Используем const
-                    const SizedBox(height: 16), // Используем const
+                    const Text('Error loading data'), 
+                    const SizedBox(height: 16), 
                     ElevatedButton(
                       onPressed: () {
                         // Повторная попытка загрузки данных
                         context.read<RoverCubit>().loadData();
                       },
-                      child: const Text('Retry'), // Используем const
+                      child: const Text('Retry'), 
                     ),
                   ],
                 ),
