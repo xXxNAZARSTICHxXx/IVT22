@@ -1,4 +1,5 @@
 import random
+from typing import Generator
 from typing import Tuple, List
 
 __author__ = "Стич Назар Иванович ИВТ-22"
@@ -35,27 +36,44 @@ def print_numbers(x: float, y: float, z: float):
     print(f"Число Z: {z:.4f}")
 
 
-def generate_random_numbers(min_vals: List[float], max_vals: List[float]) -> Tuple[float, float, float]:
+def generate_random_numbers(min_vals: List[float], max_vals: List[float]) -> Generator[float, None, None]:
     """
-    Генерирует три случайных числа в заданных диапазонах с 4 знаками после запятой.
+    Генерирует три случайных числа в заданных диапазонах с 4 знаками после запятой,
+    используя генератор.
 
     :param min_vals: Список из 3 минимальных значений
     :param max_vals: Список из 3 максимальных значений
-    :return: Кортеж из трех случайных чисел
+    :yield: Случайное число с 4 знаками после запятой
     """
-    return (
-        round(random.uniform(min_vals[0], max_vals[0]), 4),
-        round(random.uniform(min_vals[1], max_vals[1]), 4),
-        round(random.uniform(min_vals[2], max_vals[2]), 4)
-    )
+    for min_val, max_val in zip(min_vals, max_vals):
+        yield round(random.uniform(min_val, max_val), 4)
 
 
 def assert_check():
     """
     Тесты для проверки корректности алгоритма.
     """
+    # Тесты для square_non_negative
     assert square_non_negative(3, -1, 2) == (9, -1, 4)
     assert square_non_negative(-5, 0, 4) == (-5, 0, 16)
     assert square_non_negative(0.5, -0.7, 1.2) == (0.25, -0.7, 1.44)
     assert square_non_negative(-3, -2, -1) == (-3, -2, -1)
     assert square_non_negative(0, 0, 0) == (0, 0, 0)
+
+    # Тесты для generate_random_numbers
+    min_vals = [-10, -5, -1]
+    max_vals = [10, 5, 1]
+
+    generator = generate_random_numbers(min_vals, max_vals)
+    numbers = list(generator)
+
+    # Проверка количества чисел
+    assert len(numbers) == 3, "Генератор не вернул правильное количество чисел."
+
+    # Проверка диапазона чисел
+    for num, min_val, max_val in zip(numbers, min_vals, max_vals):
+        assert min_val <= num <= max_val, f"Число {num} выходит за пределы диапазона [{min_val}, {max_val}]."
+
+    # Проверка точности (4 знака после запятой)
+    for num in numbers:
+        assert round(num, 4) == num, f"Число {num} не округлено до 4 знаков после запятой."

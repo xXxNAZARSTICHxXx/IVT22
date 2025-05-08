@@ -34,7 +34,8 @@ elif len(sys.argv) == 6 and sys.argv[1] == "-random":
         min_n, max_n = int(sys.argv[2]), int(sys.argv[3])
         min_m, max_m = int(sys.argv[4]), int(sys.argv[5])
 
-        n, m = T7Module.generate_random_values(min_n, max_n, min_m, max_m)
+        generator = T7Module.generate_random_values(min_n, max_n, min_m, max_m)
+        n, m = next(generator)  # Получаем первую пару значений
         print(f"Случайно сгенерированные n = {n}, m = {m}")
     except ValueError as e:
         print(f"Ошибка: {e}")

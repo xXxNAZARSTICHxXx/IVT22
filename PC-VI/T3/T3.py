@@ -17,7 +17,8 @@ T3Module.assert_check()
 # Проверяем аргументы командной строки
 if len(sys.argv) == 2:
     if sys.argv[1] == "-random":
-        n = T3Module.generate_random_number()
+        generator = T3Module.generate_random_numbers(1)  # Генерируем 1 случайное число
+        n = next(generator)  # Получаем первое число из генератора
         print(f"Сгенерированное число: {n}")
     else:
         try:

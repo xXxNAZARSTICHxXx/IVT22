@@ -20,7 +20,8 @@ if len(sys.argv) == 2 and sys.argv[1] == "-help":
 # Проверяем аргументы командной строки
 if len(sys.argv) == 2:
     if sys.argv[1] == "-random":
-        n = T4Module.generate_random_iterations()
+        generator = T4Module.generate_random_iterations(count=1)  # Генерируем 1 случайное число
+        n = next(generator)  # Получаем первое число из генератора
         print(f"Сгенерированное количество итераций: {n}")
     else:
         try:
@@ -42,7 +43,7 @@ else:
             print("Ошибка: введите корректное натуральное число.")
 
 # Вычисляем сумму
-result = T4Module.compute_sum(n)
+result = T4Module.compute_sum_and_factorials(n)
 
 # Выводим результат
 print(f"Результат вычисления суммы: {result:.6f}")

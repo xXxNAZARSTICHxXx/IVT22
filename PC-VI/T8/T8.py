@@ -17,6 +17,9 @@ if len(sys.argv) == 2 and sys.argv[1] == "-help":
 
 print(TASK_DESCRIPTION)
 
+# Проверка работы функций модуля
+T8Module.assert_check()
+
 # Проверяем, переданы ли аргументы через командную строку
 if len(sys.argv) >= 12:
     try:
@@ -46,8 +49,9 @@ else:
         except ValueError:
             print("Ошибка: введите корректное натуральное число.")
 
-    # Генерируем случайную матрицу и массив
-    matrix, a = T8Module.generate_matrix_and_array(n)
+    # Генерируем случайную матрицу и массив с использованием генератора
+    generator = T8Module.generate_matrix_and_array(count=1)
+    matrix, a = next(generator)
 
     print("\nСгенерированная матрица:")
     T8Module.print_matrix(matrix)

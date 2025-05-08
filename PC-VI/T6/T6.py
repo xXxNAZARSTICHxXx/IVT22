@@ -25,7 +25,8 @@ if len(sys.argv) >= 3:
             min_val = int(sys.argv[3])
             max_val = int(sys.argv[4])
 
-            numbers = T6Module.get_random_numbers(n, min_val, max_val)
+            generator = T6Module.get_random_numbers(n, min_val, max_val)
+            numbers = list(generator)  # Преобразуем генератор в список
             print(f"Сгенерированные числа: {numbers}")
 
         except ValueError as e:
@@ -65,9 +66,3 @@ else:
                 break
             except ValueError:
                 print("Ошибка: введите корректное целое число.")
-
-# Вычисляем количество подходящих чисел
-result = T6Module.count_multiples_of_3_not_5(n, numbers)
-
-# Выводим результат
-print(f"Количество чисел, кратных 3, но не кратных 5: {result}")

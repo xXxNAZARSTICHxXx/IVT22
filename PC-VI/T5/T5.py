@@ -31,7 +31,8 @@ if len(sys.argv) >= 3:
             if n <= 0 or min_val > max_val:
                 raise ValueError("Ошибка: длина массива должна быть > 0, а min <= max.")
 
-            numbers = T5Module.get_random_numbers(n, min_val, max_val)
+            generator = T5Module.get_random_numbers(n, min_val, max_val)
+            numbers = list(generator)  # Преобразуем генератор в список
             print(f"Сгенерированный массив: {numbers}")
 
         except ValueError as e:
@@ -68,9 +69,3 @@ else:
                 break
             except ValueError:
                 print("Ошибка: введите корректное число.")
-
-# Вычисляем сумму квадратов
-result = T5Module.compute_sum_of_squares(numbers)
-
-# Выводим результат
-print(f"Сумма квадратов чисел: {result:.6f}")

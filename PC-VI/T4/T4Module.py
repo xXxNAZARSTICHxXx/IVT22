@@ -1,50 +1,46 @@
 import random
-from typing import List
+from typing import Generator
+import math
 
 __author__ = "Стич Назар Иванович ИВТ-22"
 
 
-
-
-def compute_sum(n: int) -> float:
+def compute_sum_and_factorials(n: int) -> float:
     """
-    Вычисляет сумму: ∑ (от i=1 до n) 1/i!, используя предвычисленные факториалы.
+    Вычисляет сумму ∑ (от i=1 до n) 1/i! и сохраняет факториалы от 1 до n.
 
-    :param n: Количество итераций суммы выражения - включительно
+    :param n: Количество итераций суммы выражения (включая n)
     :return: Результат вычисления суммы
+
+    Функция объединяет вычисления суммы и предварительное сохранение факториалов.
     """
-    factorials = precompute_factorials(n)
-    total = sum(1 / factorials[i] for i in range(1, n + 1))
+    total = 0.0
+    factorial = 1  # Начальный факториал для 0! (равен 1)
+
+    for i in range(1, n + 1):
+        factorial *= i  # Вычисляем факториал на лету
+        total += 1.0 / factorial  # Прибавляем 1/i!
+
     return total
 
-# факториал не вычислять постоянно, а где-то хранить TODO
 
-def precompute_factorials(n: int) -> List[int]:
+def generate_random_iterations(count: int = 1) -> Generator[int, None, None]:
     """
-    Вычисляет и сохраняет факториалы от 0 до n.
+    Генерирует заданное количество случайных чисел итераций от 1 до 100,
+    используя генератор.
 
-    :param n: Верхняя граница вычисления факториалов
-    :return: Список факториалов от 0! до n!
+    :param count: Количество чисел (по умолчанию 1)
+    :yield: Случайное число итераций в диапазоне [1, 100]
     """
-    factorials = [1] * (n + 1)
-    for i in range(2, n + 1):
-        factorials[i] = factorials[i - 1] * i
-    return factorials
-
-def generate_random_iterations() -> int:
-    """
-    Генерирует случайное количество итераций от 1 до 100.
-
-    :return: Случайное число итераций
-    """
-    return random.randint(1, 100)
+    for _ in range(count):
+        yield random.randint(1, 100)
 
 
 def assert_check():
     """
-    Проверка всех функций
+    Проверка всех функций.
     """
-    assert abs(compute_sum(1) - 1.0) < 1e-6
-    assert abs(compute_sum(2) - 1.5) < 1e-6
-    assert abs(compute_sum(3) - 1.666667) < 1e-6
-    assert 1 <= generate_random_iterations() <= 100
+    # Тесты для compute_sum_and_factorials
+    assert abs(compute_sum_and_factorials(1) - 1.0) < 1e-6
+    assert abs(compute_sum_and_factorials(2) - 1.5) < 1e-6
+    assert abs(compute_sum_and_factorials(3) - 1.666667) < 1e-6
